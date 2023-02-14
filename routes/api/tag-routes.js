@@ -11,11 +11,15 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Product,
-          attributes: ["id", "name", "price", "stock", "category_id"],
+          // attributes: ["id", "name", "price", "stock", "category_id"],
           through: ProductTag
         },
       ],
     });
+    if (!tagData) {
+      res.status(404).json({ message: 'No tag with this id!' });
+      return;
+    }
     res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
@@ -30,7 +34,7 @@ router.get('/:id',  async (req, res) => {
       include: [
         {
           model: Product,
-          attributes: ["id", "name", "price", "stock", "category_id"],
+          // attributes: ["id", "name", "price", "stock", "category_id"],
           through: ProductTag
         },
       ],
@@ -68,11 +72,11 @@ router.put('/:id', async (req, res) => {
       },
     });
 
-    if (!tagData[0]) {
+    if (!tagData) {
       res.status(404).json({ message: 'No tag with this id!' });
       return;
     }
-    res.status(200).json(tagToUpdate);
+    res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
   }
