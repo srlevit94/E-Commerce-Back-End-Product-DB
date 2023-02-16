@@ -10,7 +10,7 @@ This application serves as a back-end for an e-Commerce website. It keeps a data
 - "npm install" the proper node packages
 - navigate to the 'db' folder, run MYSQL, and enter 'source schema.sql" into the terminal
 - change back to the main directory
-- "npm run seeds" to seed the sample data
+- "npm run seed" to seed the sample data
 - "npm run start" to run the application
 - application runs at "http://localhost:3001/api/" , then either 'categories', 'tags', or 'products' at the end of the URL
 
@@ -20,3 +20,7 @@ See the demo video linked below to see the application in use!
 
 ## GitHub Repository Link:
 - https://github.com/srlevit94/E-Commerce-Back-End-Product-DB
+
+## License 
+This project is covered under the MIT license.
+
