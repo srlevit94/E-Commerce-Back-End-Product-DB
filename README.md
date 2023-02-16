@@ -15,3 +15,8 @@ This application serves as a back-end for an e-Commerce website. It keeps a data
 - application runs at "http://localhost:3001/api/" , then either 'categories', 'tags', or 'products' at the end of the URL
 
 ## Usage
+See the demo video linked below to see the application in use!
+-https://watch.screencastify.com/v/1y0bHlY0XJkTPgFeNXq3
+
+## GitHub Repository Link:
+- https://github.com/srlevit94/E-Commerce-Back-End-Product-DB
